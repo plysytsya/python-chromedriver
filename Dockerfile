@@ -21,4 +21,4 @@ RUN CHROME_VERSION=$( google-chrome --version | perl -pe '($_)=/(\d+\.\d+\.\d+)/
     CHROMEDRIVER_VERSION=$(curl https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION) && \
     wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip && \
-    ln -s /app/chromedriver /usr/bin
+    ln -s /chromedriver /usr/bin
