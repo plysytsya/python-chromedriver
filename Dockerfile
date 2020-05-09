@@ -1,6 +1,5 @@
 FROM python:3.7.5-slim-buster
-COPY . /app
-WORKDIR /app
+
 RUN apt-get -yqq update && \
     apt-get -yqq install curl unzip && \
     apt-get -yqq install xvfb tinywm && \
