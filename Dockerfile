@@ -1,4 +1,4 @@
-FROM python:3.7.5-slim-buster
+FROM python:3.8-buster
 
 RUN apt-get -yqq update && \
     apt-get -yqq install curl unzip && \
